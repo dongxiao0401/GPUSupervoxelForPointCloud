@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 	/*
 	save_type
 	0:labels of point cloud;
-	1:position and color of point cloud, open the .txt in CloudCompare software
+	1:pseudo-color supervoxels of point cloud, open the .txt in CloudCompare software
 	*/
 	int save_type = 1;
 	//Provide the paths of coordinates and normal of the point cloud
