@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 	normals.clear();
 	
 	//specify your save path
-	string save_name = "1.txt";
+	string save_name = "..\\..\\example\\1.txt";
 	/*
 	save_type
 	0:labels of point cloud;

@@ -535,11 +535,11 @@ int GPUSupervoxel::JFASupervoxel(const std::vector<double> &points,
 	{
 		render_color[i] = rand() % 256;
 	}
-	Shader seg = Shader("VP_Seg.vs", "FP_Seg.fs");
-	Shader aver_seg = Shader("VP_SumSeg.vs", "FP_SumSeg.fs");
-	Shader aver_swap = Shader("VP_SumSwap.vs", "FP_SumSwap.fs");
-	Shader cov = Shader("VP_cov.vs", "FP_cov.fs");
-	Shader swap_comb = Shader("VP_SwapComb.vs", "FP_SwapComb.fs");
+	Shader seg = Shader("../../GPU-SS/VP_Seg.vs", "../../GPU-SS/FP_Seg.fs");
+	Shader aver_seg = Shader("../../GPU-SS/VP_SumSeg.vs", "../../GPU-SS/FP_SumSeg.fs");
+	Shader aver_swap = Shader("../../GPU-SS/VP_SumSwap.vs", "../../GPU-SS/FP_SumSwap.fs");
+	Shader cov = Shader("../../GPU-SS/VP_cov.vs", "../../GPU-SS/FP_cov.fs");
+	Shader swap_comb = Shader("../../GPU-SS/VP_SwapComb.vs", "../../GPU-SS/FP_SwapComb.fs");
 	//average position of supervoxel, compute the nearest voxel as new seed for next iteration
 	vector<float> seeds_3d;
 	int Lloyd_curr_iter = 0;
