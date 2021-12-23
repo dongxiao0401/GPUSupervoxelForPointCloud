@@ -6,18 +6,19 @@ We provide the source code that tested on Windows for the paper:
 ```
 The project requires: OpenGL 4.2 or later; 
 
-We provide GLFW in "includes" and "lib". Create "build" dir and use cmake to build the project. 
+We provide GLFW in "includes" and "lib" dirs. 
+Create "build" dir and use cmake to build the project. Note that the paths of shaders should be correct.
 
 ```
 
 ## Parameters 
 ```
-Specify the paths of position and normal of the point cloud. Note that the paths of shaders should be correct.
+Specify the paths of position and normal of the point cloud. 
 
-We provide an example point cloud from Okaland dataset. Note that we pre-compute the normals of the points. 
+We provide an example point cloud in the "example" dir. We pre-compute the normals of the points. 
 
 The program generates supervoxel segmentation results in txt file, including labels and pseudo-color result. 
-You can specify the "save_type" of the txt result. Please use CloudCompare software to see the pseudo-color result. 
+You can specify the "save_type" of the txt result. Please use software "CloudCompare" to see the pseudo-color result. 
 
 
 You can download the point cloud datasets from following websites:
