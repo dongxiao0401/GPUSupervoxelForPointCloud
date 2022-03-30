@@ -1,6 +1,13 @@
 We provide the source code that tested on Windows for the paper: 
 > **GPU-based Supervoxel Segmentation for 3D Point Clouds**
-
+>
+> Xiao Dong, 
+> Yanyang Xiao,
+> Zhonggui Chen, 
+> Junfeng Yao, 
+> Xiaohu Guo
+>
+> Computer Aided Geometric Design, 2022
 
 ## Runtime Environment 
 ```
@@ -27,4 +34,22 @@ Semantic3D: http://www.semantic3d.net/
 NYUV2: https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html
 
 ```
+
+## License
+```
+The codes in this repository are under the GNU AFFERO GENERAL PUBLIC LICENSE as specified by the LICENSE file.
+```
+## BibTex
+If you find our code or paper useful, please consider citing
+```
+@article{dong2022gpu,
+  title={GPU-based Supervoxel Segmentation for 3D Point Clouds},
+  author={Dong, Xiao and Xiao, Yanyang and Chen, Zhonggui and Yao, Junfeng and Guo, Xiaohu},
+  journal={Computer Aided Geometric Design},
+  pages={102080},
+  year={2022},
+  publisher={Elsevier}
+}
+```
+
 
