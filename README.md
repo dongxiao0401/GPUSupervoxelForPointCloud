@@ -1,4 +1,4 @@
-# GPU-based Supervoxel Generation with a Novel Anisotropic Metric
+# GPU-based Supervoxel Segmentation for 3D Point Clouds
 We provide the source code that tested on Windows for the paper: 
 > **GPU-based Supervoxel Segmentation for 3D Point Clouds**
 >
