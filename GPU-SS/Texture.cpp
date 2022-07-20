@@ -298,7 +298,7 @@ int Texture::init_texture(vector<float>& data_3d, vector<float>& normal_3d, vect
 	glBindVertexArray(VAO_p);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO_p);
 	glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), &vertices[0], GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), (void*)0);//2*sizeof(float)这里之前忘了写2*了，导致bug
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), (void*)0);//2*sizeof(float)
 	glEnableVertexAttribArray(0);
 
 
