@@ -88,10 +88,10 @@ int Texture::init_texture(vector<float>& data_3d, vector<float>& normal_3d, vect
 		return -1;
 	}
 	const GLubyte* OpenGLVersion = glGetString(GL_VERSION);
-	printf("OpenGL version£∫%s\n", OpenGLVersion);
+	printf("OpenGL versionÔºö%s\n", OpenGLVersion);
 	int value;
 	glGetIntegerv(GL_MAX_3D_TEXTURE_SIZE, &value);
-	printf("GL_MAX_3D_TEXTURE_SIZE£∫%d\n", value);
+	printf("GL_MAX_3D_TEXTURE_SIZEÔºö%d\n", value);
 	
 
 	frameBuffer_data = 0;
@@ -171,7 +171,7 @@ int Texture::init_texture(vector<float>& data_3d, vector<float>& normal_3d, vect
 
 	
 	/*
-	seed_matrix£∫
+	seed_matrixÔºö
 	<valid,num,-1>,<aver_pos(x,y,z)>,<sum_normal>,<cov_first3>,<cov_last3>,<N_first3>,<N_last3>
 	   0,1,2,            3,4,5,         6,7,8,      9,10,11,    12,13,14,   15,16,17,  18,19,20
 	*/
@@ -298,7 +298,7 @@ int Texture::init_texture(vector<float>& data_3d, vector<float>& normal_3d, vect
 	glBindVertexArray(VAO_p);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO_p);
 	glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), &vertices[0], GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), (void*)0);//2*sizeof(float)’‚¿Ô÷Æ«∞Õ¸¡À–¥2*¡À£¨µº÷¬bug
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2*sizeof(float), (void*)0);//2*sizeof(float)ËøôÈáå‰πãÂâçÂøò‰∫ÜÂÜô2*‰∫ÜÔºåÂØºËá¥bug
 	glEnableVertexAttribArray(0);
 
 
@@ -392,7 +392,7 @@ void Texture::aver_surface_seg(Shader& aver, vector<float>& seeds_3d, vector<flo
 			seed_valid[i] = 0;
 			seeds_3d[i * 4] = 0;
 			seeds_3d[i * 4 + 1] = 0;
-			seeds_3d[i * 4 + 1] = 0;
+			seeds_3d[i * 4 + 2] = 0;
 			dis_num++;
 			//cout << i << "disappear:"<< res[i * 4 + 3] << endl;
 		}
@@ -537,7 +537,7 @@ void Texture::cov_matrix(Shader& cov, vector<float>& seed_cov_info, vector<float
 	print_flood_RGB(3);*/
 
 	/*
-	seed_matrix£∫
+	seed_matrixÔºö
 	<valid,num,-1>,<aver_pos(x,y,z)>,<sum_normal>,<cov_first3>,<cov_last3>,<N_first3>,<N_last3>
 	   0,1,2,            3,4,5,         6,7,8,      9,10,11,    12,13,14,   15,16,17,  18,19,20
 	*/
